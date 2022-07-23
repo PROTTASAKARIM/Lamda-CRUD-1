@@ -9,13 +9,14 @@ const AllEmployee = () => {
             .then(res => res.json())
             .then(data => setEmployees(data))
     }, [])
-    console.log(employees)
+    // console.log(employees)
     return (
         <div className='container mt-5'>
             <h1>All Employees</h1>
             <div id='emp' className='employee mt-5'>
                 {
                     employees.map(emp => <Employee
+                        key={emp._id}
                         emp={emp}
                     ></Employee>)
                 }

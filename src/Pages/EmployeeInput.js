@@ -26,6 +26,7 @@ const EmployeeInput = () => {
                 <input className='mb-2' placeholder='Designation' {...register("designation", { required: true })} />
                 <input className='mb-2' placeholder='Department' {...register("department", { required: true })} />
                 <input className='mb-2' placeholder='Joining Date' {...register("joiningDate", { required: true })} />
+                <input className='mb-2' placeholder='Employee Picture URL' {...register("empImg", { required: true })} />
                 <input className='btn btn-success' type="submit" value="Add Employee" />
             </form>
         </div>
