@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const TableDetails = ({ emp }) => {

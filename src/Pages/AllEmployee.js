@@ -20,8 +20,6 @@ const AllEmployee = () => {
     const filterByName = () => {
 
         const namefilter = byName.current.value;
-        console.log(namefilter)
-        console.log(employees)
         const remaining = employees.filter((employee, i) => employee.firstName.toLowerCase() === namefilter.toLowerCase())
         console.log(remaining)
         setEmployees(remaining)
