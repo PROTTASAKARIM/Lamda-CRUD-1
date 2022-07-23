@@ -16,18 +16,22 @@ const EmployeeDetail = () => {
         navigate(`/update/${id}`)
     }
 
+
     return (
         <div className='container'>
             <img className='w-100 mt-5' src={employeeDetail?.empImg}></img>
             <div className='container mt-2'>
-                <h1>Name : {employeeDetail.name}</h1>
+                <h1>Name : {employeeDetail.firstName} {employeeDetail.lastName} </h1>
+                <p>Email Address : {employeeDetail.email}</p>
                 <p>Designation : {employeeDetail.designation}</p>
                 <p>Department : {employeeDetail.department}</p>
                 <p>Joining Date : {employeeDetail.joiningDate}</p>
+                <p>Email Address : {employeeDetail.address}</p>
+                <p>Email Address : {employeeDetail.empImg}</p>
             </div>
             <div className='container d-flex mx-auto'>
                 <button onClick={() => navigateToUpdate(employeeDetail._id)} className='btn btn-success mx-2'>Update</button>
-                <button className='btn btn-danger'>Delete</button>
+
             </div>
         </div>
     );
