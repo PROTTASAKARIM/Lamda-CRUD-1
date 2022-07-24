@@ -1,3 +1,10 @@
+# My live site 
+(https://jovial-alpaca-671595.netlify.app/)
+
+* Home page have a table that displays all the employees that are saved in the mongodb
+* CRUD operations are done
+* User can see employee details
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
