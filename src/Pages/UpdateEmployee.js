@@ -10,7 +10,7 @@ const UpdateEmployee = () => {
     const [employee, setEmployee] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/update/${id}`)
+        fetch(`https://employee-curd.herokuapp.com/update/${id}`)
             .then(res => res.json())
             .then(data => setEmployee(data))
     }, [id])
@@ -19,7 +19,7 @@ const UpdateEmployee = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/employees/${id}`;
+        const url = `https://employee-curd.herokuapp.com/employees/${id}`;
         console.log(url)
         fetch(url, {
             method: 'PUT',

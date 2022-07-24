@@ -12,7 +12,7 @@ const AllEmployee = () => {
     const byJoiningDate = useRef();
 
     useEffect(() => {
-        fetch('http://localhost:5000/employees')
+        fetch('https://employee-curd.herokuapp.com/employees')
             .then(res => res.json())
             .then(data => setEmployees(data))
     }, [])

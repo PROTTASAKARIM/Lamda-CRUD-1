@@ -19,7 +19,7 @@ const TableDetails = ({ emp }) => {
     const deleteEmplyee = (id) => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            fetch(`http://localhost:5000/employees/${id}`, {
+            fetch(`https://employee-curd.herokuapp.com/employees/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

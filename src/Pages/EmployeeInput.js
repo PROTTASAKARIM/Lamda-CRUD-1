@@ -7,7 +7,7 @@ const EmployeeInput = () => {
     const onSubmit = data => {
         console.log(data);
 
-        fetch(`http://localhost:5000/employees`, {
+        fetch(`https://employee-curd.herokuapp.com/employees`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
