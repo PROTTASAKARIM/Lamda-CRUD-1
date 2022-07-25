@@ -4,6 +4,9 @@
 * Home page have a table that displays all the employees that are saved in the mongodb
 * CRUD operations are done
 * User can see employee details
+* if data is taking time loading then press Ctrl+shift+R
+* for running in your pc do git clone
+* then run command npm i. so all the packages will be installed
 
 # Getting Started with Create React App
 
